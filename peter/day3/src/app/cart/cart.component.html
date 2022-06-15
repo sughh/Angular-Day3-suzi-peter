@@ -2,3 +2,18 @@
 <div class="cart-items" *ngFor="let animal of animals">
     <span>{{animal.animal}}: {{animal.name}} </span>
 </div>
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+    <div>
+        <label for="name">
+            Name:
+        </label>
+        <input id="name" type="text" formControlName="name">
+    </div>
+    <div>
+        <label for="address">
+            Address:
+        </label>
+        <input id="address" type="text" formControlName="address">
+    </div>
+    <button class="button" type="submit">Adobt</button>
+</form>
