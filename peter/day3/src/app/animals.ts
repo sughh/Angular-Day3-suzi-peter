@@ -4,7 +4,7 @@ export const animals =[
         animal: "Cat",
         race: "Maine Coon",
         age: 5,
-        description: ""
+        description: "Not actually a Ginger"
     },
     {
         name: "Tinkerbell",

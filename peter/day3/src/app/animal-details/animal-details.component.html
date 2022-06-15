@@ -1,0 +1,10 @@
+<h2>Animal Details</h2>
+<div class="my-5" *ngIf="animal">
+    <h1>{{animal.animal}}: {{animal.name}} </h1>
+    <p>
+        Race: {{animal.race}}<br>
+        Age: {{animal.age}} Years
+    </p>
+    <p>{{animal.description}} </p>
+    <button class="btn btn-success" (click)="addToCart()">Adopt</button>
+</div>

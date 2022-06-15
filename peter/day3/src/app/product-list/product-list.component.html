@@ -1,8 +1,17 @@
 <h1>Animals</h1>
 <hr>
-<div *ngFor="let animal of animals">
-    <h3>
-        {{animal.name}}
-    </h3>
+<div *ngFor="let animal of animals; index as animalId">
+    <a routerLink="animals/{{animalId}}">
+        {{animal.animal}}: {{animal.name}}
+    </a>
+
+    <p>
+        Race: {{animal.race}}<br>
+        Age: {{animal.age}} Years
+    </p>
+    <p *ngIf="animal.description">
+        Description: {{animal.description}}
+    </p>
+    <hr>
 
 </div>
